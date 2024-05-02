@@ -1,5 +1,5 @@
 # TDD-practice
 
-- Test Driven Development practice
+Test Driven Development practice
 
-Unit test basics using Jest
+- Unit test basics using Jest
