@@ -1,19 +1,19 @@
-const plainAlphabet = [...'abcdefghijklmnopqrstuvwxyz'];
+const plainAlphabet = [...' .,?!abcdefghijklmnopqrstuvwxyz'];
 
 export default function caesarCipher(message = 'sample', shift = 2) {
 	let cipher = generateCipherAlphabet(shift);
 	let encryptedMessage = '';
-	let iterableMessage = [...message];
+	let iterableMessage = [...message.toLowerCase()];
 	iterableMessage.forEach((letter) => {
 		encryptedMessage += cipher[letter];
 	});
-	return encryptedMessage;
+	return encryptedMessage.toUpperCase();
 }
 
 function generateCipherAlphabet(shift) {
 	let cipheredAlphabet = {};
 	plainAlphabet.forEach((letter) => {
-		let index = (plainAlphabet.indexOf(letter) + shift) % 26;
+		let index = (plainAlphabet.indexOf(letter) + shift) % 31;
 		cipheredAlphabet[letter] = plainAlphabet[index];
 	});
 	return cipheredAlphabet;
