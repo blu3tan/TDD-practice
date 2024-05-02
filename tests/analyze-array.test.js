@@ -1,4 +1,6 @@
-import analyzeArray from './analyze-array';
+// An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.
+
+import analyzeArray from '../analyze-array';
 
 describe('Analyze array function', () => {
 	it('gets an array of numbers, returns object', () => {

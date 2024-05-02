@@ -1,4 +1,6 @@
-import caesarCipher from './caesarCipher';
+// A caesarCipher function that takes a string and a shift factor and returns it with each character “shifted”.
+
+import caesarCipher from '../caesarCipher';
 
 describe('caesar cipher test', () => {
 	it('get message, get shift factor, return message ciphered', () => {
